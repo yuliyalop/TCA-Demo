@@ -11,7 +11,12 @@ import SwiftUI
 struct TCA_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(state: AppState())
+            if let jsonData = UserDefaults.standard.value(forKey: "appState"),
+               let appState = try? JSONDecoder().decode(AppState.self, from: jsonData as! Data) {
+                ContentView(state: appState)
+            } else  {
+                ContentView(state: AppState())
+            }
         }
     }
 }
