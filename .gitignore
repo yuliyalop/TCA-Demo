@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.swiftdoc
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+build/
+DerivedData/
+*.xcconfig
+Package.resolved
+*.xcscheme
+*.xcuserstate
+.idea/
+*.editorconfig
+*.xccheckout
+*.xcscmblueprint
+.project-generated/
+xcframeworks/
+.project-generated/
+*.iml
+*.ipr
